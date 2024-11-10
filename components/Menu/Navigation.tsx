@@ -76,7 +76,7 @@ const Navigation = () => {
         className={styles.menu}
         right={{
           lg:
-            !isMobile && scrollDirection === ScrollDirection.Down
+            !isMobile && scrollDirection === ScrollDirection.Up
               ? '2%'
               : '3.5%',
         }}
@@ -84,7 +84,7 @@ const Navigation = () => {
         animate={(!isMobile || isOpen) && 'show'}
         style={{
           width:
-            !isMobile && scrollDirection === ScrollDirection.Down
+            !isMobile && scrollDirection === ScrollDirection.Up
               ? '12%'
               : '100%',
           top: !isOpen && isMobile && '-100vh',
@@ -104,12 +104,12 @@ const Navigation = () => {
           justifyContent={{ base: 'center', lg: 'flex-end' }}
           direction={{
             base: 'column',
-            lg: scrollDirection === ScrollDirection.Down ? 'column' : 'row',
+            lg: scrollDirection === ScrollDirection.Up ? 'column' : 'row',
           }}
           paddingX={{ base: '', sm: '10', lg: '0' }}
           paddingY={{
             base: '10',
-            lg: scrollDirection === ScrollDirection.Down ? '10' : '3',
+            lg: scrollDirection === ScrollDirection.Up ? '10' : '3',
           }}
           height={{ base: '100vh', lg: 'auto' }}
           paddingRight="0"
