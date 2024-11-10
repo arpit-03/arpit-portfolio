@@ -1,23 +1,13 @@
 import { IconType } from 'react-icons'
 import {
-  SiDotNet,
   SiJavascript,
   SiTypescript,
   SiNodeDotJs,
-  SiGraphql,
-  SiApollographql,
-  SiPhp,
   SiReact,
   SiNextDotJs,
   SiRedux,
   SiStyledComponents,
-  SiGhost,
-  SiVueDotJs,
   SiDocker,
-  SiGooglecloud,
-  SiCpanel,
-  SiRancher,
-  SiGitlab,
   SiPostgresql,
   SiMicrosoftsqlserver,
   SiMysql,
@@ -32,6 +22,22 @@ import {
   SiUnity,
   SiMicrosoft,
   SiElectron,
+  SiRails,
+  SiGo,
+  SiPython,
+  SiJava,
+  SiAmazonaws,
+  SiTerraform,
+  SiTailwindcss,
+  SiSass,
+  SiAzuredevops,
+  SiAngular,
+  SiOpenaccess,
+  SiTensorflow,
+  SiFacebook,
+  SiOpengl,
+  SiNvidia,
+  SiElasticsearch,
 } from 'react-icons/si'
 import { BsQuestionSquare } from 'react-icons/bs'
 import { AiOutlineAntDesign } from 'react-icons/ai'
@@ -48,6 +54,7 @@ export type SkillCategory =
   | 'mobile'
   | 'games'
   | 'desktop'
+  | 'ai ml'
 
 export type Skill = {
   name: string
@@ -59,8 +66,8 @@ export const Skills: {
 } = {
   backend: [
     {
-      name: 'C# - .NET.Core',
-      icon: SiDotNet,
+      name: 'Ruby on Rails',
+      icon: SiRails,
     },
     {
       name: 'Node',
@@ -71,21 +78,25 @@ export const Skills: {
       icon: SiJavascript,
     },
     {
+      name: 'Golang',
+      icon: SiGo,
+    },
+    {
+      name: 'Python',
+      icon: SiPython,
+    },
+    {
       name: 'Typescript',
       icon: SiTypescript,
     },
     {
-      name: 'Graphql (JS, C#)',
-      icon: SiGraphql,
-    },
-    {
-      name: 'PHP (Wordpress, Slim)',
-      icon: SiPhp,
+      name: 'Java',
+      icon: SiJava,
     },
   ],
   frontend: [
     {
-      name: 'React, RecoilJS',
+      name: 'React',
       icon: SiReact,
     },
     {
@@ -93,20 +104,12 @@ export const Skills: {
       icon: SiNextDotJs,
     },
     {
-      name: 'Apollo Graphql',
-      icon: SiApollographql,
-    },
-    {
       name: 'Redux',
       icon: SiRedux,
     },
     {
-      name: 'VueJS',
-      icon: SiVueDotJs,
-    },
-    {
-      name: 'Ghost',
-      icon: SiGhost,
+      name: 'Angular',
+      icon: SiAngular,
     },
   ],
   database: [
@@ -135,8 +138,12 @@ export const Skills: {
       icon: SiSocketDotIo,
     },
     {
-      name: 'Google Pubsub',
-      icon: SiGooglecloud,
+      name: 'Dynamo DB',
+      icon: SiAmazonaws,
+    },
+    {
+      name: 'Elasticsearch',
+      icon: SiElasticsearch,
     },
   ],
   cicd: [
@@ -145,24 +152,16 @@ export const Skills: {
       icon: SiDocker,
     },
     {
-      name: 'GCP',
-      icon: SiGooglecloud,
+      name: 'Terraform',
+      icon: SiTerraform,
     },
     {
-      name: 'CPanel',
-      icon: SiCpanel,
+      name: 'Aws',
+      icon: SiAmazonaws,
     },
     {
-      name: 'Rancher',
-      icon: SiRancher,
-    },
-    {
-      name: 'GitlabCICD',
-      icon: SiGitlab,
-    },
-    {
-      name: 'Buildkite',
-      icon: BsQuestionSquare,
+      name: 'Azure',
+      icon: SiAzuredevops,
     },
   ],
   'ui frameworks': [
@@ -171,21 +170,17 @@ export const Skills: {
       icon: SiStyledComponents,
     },
     {
-      name: 'AntDesign',
-      icon: AiOutlineAntDesign,
+      name: 'Tailwind',
+      icon: SiTailwindcss,
+    },
+    {
+      name: 'Sass',
+      icon: SiSass,
     },
     {
       name: 'MaterialUI',
       icon: SiMaterialUi,
-    },
-    {
-      name: 'Framer Motion',
-      icon: SiFramer,
-    },
-    {
-      name: 'ChakraUI',
-      icon: BsQuestionSquare,
-    },
+    }
   ],
   'productivity boost': [
     {
@@ -231,6 +226,24 @@ export const Skills: {
       icon: SiElectron,
     },
   ],
+  'ai ml' : [
+    {
+      name: 'Tensorflow',
+      icon: SiTensorflow,
+    },
+    {
+      name: 'Llama',
+      icon: SiFacebook,
+    },
+    {
+      name: 'ChatGPT',
+      icon: SiOpenaccess,
+    },
+    {
+      name: 'ChatRTX',
+      icon: SiNvidia,
+    },
+  ]
 }
 
 export const splitSkills = (srcArray: Skill[]) => {

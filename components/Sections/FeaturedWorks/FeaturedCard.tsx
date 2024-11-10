@@ -107,7 +107,7 @@ const ProjectDescription = ({
     >
       {description}
     </Text>
-    <Button
+   {ctaUrl ? <Button
       variant="outlineAlternative"
       fontWeight="light"
       fontSize={{ base: 'sm', '2xl': 'md' }}
@@ -119,7 +119,7 @@ const ProjectDescription = ({
       marginY={{ base: 3, md: 0 }}
     >
       View Project
-    </Button>
+    </Button> :<></>}
   </Container>
 )
 

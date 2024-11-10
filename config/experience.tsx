@@ -20,137 +20,78 @@ export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
   Deloitte: {
-    name: 'Deloitte',
-    longName: 'Deloitte Consulthing Phils. Delivery Center',
-    subDetail: 'Consulthing Phils. Delivery Center',
-    url: 'https://www2.deloitte.com/',
-    position: 'Software Engineer Consultant',
-    duration: 'Sep 2021 - Present',
+    name: 'Hyperpure',
+    longName: 'Hyperpure (By Zomato)',
+    subDetail: '',
+    url: 'https://www.hyperpure.com/',
+    position: 'Software Development Engineer 2 (SDE 2)',
+    duration: 'Jul 2022 - Aug 2024',
     logo: {
-      light: '/worked_at_logos/deloitte/Deloitte_logo_black.png',
-      dark: '/worked_at_logos/deloitte/Deloitte_logo.png',
+      light: '/worked_at_logos/hyperpureicon.jpg',
+      dark: '/worked_at_logos/hyperpureicon.jpg',
     },
     roles: [
       <>
-       Contributed to the design and development of a comprehensive .NET payment integration project for a client
-       That covered credit card payments and subscription management.
-       Introduced Stripe as a new payment provider within the system architecture.
-       Participated in triaging, fixing and adding new functionalitiesto multiple Azure powered APIs of the same client.
-      </>,
-      <>
-        Worked as a Sitecore Backend on new{' '}
-        <Link
-          aria-label="Deloitte Digital AU"
-          href="https://www.deloittedigital.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Deloitte Digital AU Site.
-        </Link>
-      </>,
-      <>
-        Udergone training for .NET Sitecore 10,
-        Sitecore SXA and different topologies it provides.{' '} and Passed {' '}
-        <Link
-          aria-label="Sitecore 10 .NET Developer Certification"
-          href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sitecore 10 .NET Developer Certification.
-        </Link>
-      </>,
+      Led a company-wide transition to server-side rendering with Next.js, optimizing SEO performance in line with Google’s Core Web Vitals (LCP, FID, CLS). Improved crawlability and performance metrics, driving an 87% increase in daily organic visits and boosting average search position from 45 to 15. Approximately 20% of total orders were attributed to organic search.
+    </>,
+    <>
+      Integrated partners’ Point of Sale systems with Iframe, enabling seamless ordering through the Hyperpure platform directly via their POS apps. This integration contributed to a 1.2% increase in GMV, enhancing business growth.
+    </>,
+    <>
+      Developed a ‘Mandi’ procurement system, allowing buyers to source supplies directly from the market and bypass warehousing. This strategic shift resulted in significant cost savings on warehousing for each order.
+    </>,
+    <>
+      Enhanced product search functionality with AI-driven models like Spell Correction and Entity Recognition, integrated into Elasticsearch. These improvements increased search-to-cart actions by 10%, boosting user engagement and conversion rates.
+    </>,    
     ],
   },
   SCG: {
-    name: 'Scentregroup',
-    longName: 'Scentregroup Limited AU',
-    subDetail: 'via Prosource BPO',
-    url: 'https://www.scentregroup.com/',
-    position: 'Software Engineer',
-    duration: 'Feb 2020 - Sep 2021',
+    name: 'Zomato',
+    longName: 'Zomato',
+    subDetail: '',
+    url: 'https://www.zomato.com/',
+    position: 'Software Development Engineer (SDE)',
+    duration: 'Oct 2020 - Jul 2022',
     logo: {
-      light: '/worked_at_logos/scg/SCG_400x400.jpg',
-      dark: '/worked_at_logos/scg/SCG.png',
+      light: '/worked_at_logos/zomatoicon.png',
+      dark: '/worked_at_logos/zomatoicon.png',
     },
     roles: [
       <>
-        Revamping the legacy Partner Portal into a new{' '}
-        <Link
-          aria-label="Westfield Marketing Hub"
-          href="https://partner.scentregroup.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield Marketing Hub
-        </Link>{' '}
-        using NextJS and Typescript. Restructuring the old express app into a
-        newer architectural design approach.
-      </>,
-      <>
-        Created multiple Contentful and Bynder extensions to improve BX process
-        better.
-      </>,
-      <>
-        Worked on maintaining{' '}
-        <Link
-          variant="primaryLink"
-          href="https://www.westfield.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield
-        </Link>{' '}
-        main site and Graphql apis written in NodeJS.
-      </>,
-      <>
-        Migrating of existing marketing email related tools and batch jobs from
-        Responsys into new platform called Braze.
-      </>,
-      <>
-        Hired at early 2020, first major task was helping with selecting a new
-        marketing vendor that can scale and also enable us to have
-        personalisation as well, selecting{' '}
-        <Link
-          aria-label="Braze"
-          href="https://www.braze.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Braze
-        </Link>{' '}
-        as a result.
-      </>,
+      Implemented an automated ticket request system, reducing manual effort by 74.2% on average monthly tickets. The system handles multiple ticket types, including refunds and discrepancies, using predefined rules and data for efficient processing.
+    </>,
+    <>
+      Developed a Python-based Routing System that intelligently grouped orders, reducing daily routes by 15. This optimization improved delivery efficiency, decreased route times, and significantly lowered supply chain costs.
+    </>,
+    <>
+      Introduced a Zone System to categorize outlets into specific zones, optimizing route planning and delivery operations. This enhancement increased On-Time Delivery (OTD) rates by 30%, ensuring timely fulfillment and higher customer satisfaction.
+    </>,
+    <>
+      Created a robust Cash Management system to address discrepancies, reducing monthly losses by approximately ₹4 lakh. By establishing a daily cash reporting process for delivery partners, this solution improved accuracy, accountability, and minimized financial losses.
+    </>,
+    <>
+      Led the redesign of the consumer website UI, integrating payment kits and maintaining the web repository. This effort enhanced the user experience, boosting customer satisfaction (CSAT) and platform engagement.
+    </>,
+    
     ],
   },
   Blotocol: {
-    name: 'Blotocol',
-    longName: 'Blotocol Philippines',
-    subDetail: 'formerly IVP Global Inc.',
-    url: 'https://blotocol.com/',
-    position: 'Senior Software Engineer',
-    duration: 'Nov 2016 - Feb 2020',
+    name: 'Joulewise',
+    longName: 'Joulewise',
+    subDetail: '',
+    url: 'https://joulewise.com/',
+    position: 'Software Engineer (Contract)',
+    duration: 'Aug 2024 - Oct 2024',
     logo: {
-      light: '/worked_at_logos/ivp/blotocol_logo-dark.png',
-      dark: '/worked_at_logos/ivp/blotocol-logo-white.png',
+      light: '/worked_at_logos/jouleWise.svg',
+      dark: '/worked_at_logos/joulewise-white-logo.svg',
     },
     roles: [
       <>
-        Developed a Twitter Raffle Campaign / Contest Bot called Camps with
-        statistics similar to Facebook Ads.
+       Led a team of five to build a platform for electricity forecasting and trading for DISCOMs and factories.
       </>,
       <>
-        In 2019 got promoted as Senior Software Engineer and worked with Cryto
-        Exchange, Smart Contracts and other APIs using several techs such as
-        NodeJS, .NET Core and React.
-      </>,
-      <>
-        Create highly scalable Japanese e-commerce sites. Most notable clients
-        were TV Tokyo, Layla EC using .NET.
-      </>,
-      <>
-        Hired at 2016, Undergone Japanese language training first. Shortly
-        after, worked with in-house .NET MVC Framework called ERS.
+      Developed backend with Azure Functions, Python, and Azure SQL, and a React-based frontend.
       </>,
     ],
   },

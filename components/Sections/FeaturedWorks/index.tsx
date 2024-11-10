@@ -44,13 +44,13 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="Japanese social media platform for travelers to show off their
-          adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
+            title="Hyperpure"
+            src="/works/hp.jpg"
+            description="Making the lives of our partner restaurants better, as part of
+the ‘Hyperpure’ team that helps provide fresh and high-quality ingredients and supplies to restaurants."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://tobira-app-test.netlify.app/"
-            objectPosition="right 20%"
+            ctaUrl="https://hyperpure.com/"
+            objectPosition="left 0%"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -58,11 +58,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="RSV"
-            description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
+            title="Hyperpure Routing"
+            description="Developed a Python-based Routing System to intelligently group orders, resulting in a 15-route reduction per day. This optimization
+enhanced delivery efficiency, minimized route times, and effectively lowered supply chain management costs."
+            src="/works/zomato.jpg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://solution.rsv.ltd/jp"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -70,12 +70,12 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Agora School"
-            description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
-            src="/works/agora.webp"
+            title="Joulewise ErgCon"
+            description="Built a platform for electricity forecasting and trading for DISCOMs and factories."
+            src="/works/jw.jpg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://dev.agora-school.com"
-            objectPosition="right 20%"
+            ctaUrl="https://joulewise.com"
+            objectPosition="left 20%"
             isMobile={isMobile}
           />
         </MotionGridItem>
@@ -83,11 +83,35 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="TMH Layla EC"
-            description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
-            src="/works/tmh.webp"
+            title="Borehole Seismic"
+            description="At Borehole Seismic LLC, worked on borehole, surface, and shallow-buried-array microseismic projects. Delivered precise and unbiased results, surpassing those provided by larger service companies."
+            src="/works/bh.jpg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
-            ctaUrl="https://www.layla-ec.com/"
+            ctaUrl="https://www.boreholeseismic.com/"
+            isMobile={isMobile}
+          />
+        </MotionGridItem>
+        <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
+          <FeaturedCard
+            idx={5}
+            title="Collaboration Room AI"
+            description="Developed a WebRTC-based video conferencing app using MediaSoup Library, with React.js frontend and Node.js backend."
+            src="/works/collab.jpg"
+            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://collaborationroom.ai/"
+            objectPosition="left 20%"
+            isMobile={isMobile}
+          />
+        </MotionGridItem>
+        <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
+          <FeaturedCard
+            idx={6}
+            title="USAID (CPAT)"
+            description="Developed and deployed a tool for USAID to monitor organizations' adherence to security protocols. Built the backend with Python and MySQL, and the frontend with React."
+            src="/works/usaid.jpg"
+            height={{ base: '130px', md: '225px', '2xl': '300px' }}
+            ctaUrl="https://www.usaid.gov/"
+                objectPosition="left 20%"
             isMobile={isMobile}
           />
         </MotionGridItem>

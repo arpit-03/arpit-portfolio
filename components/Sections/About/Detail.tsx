@@ -21,6 +21,8 @@ import {
   SiNextDotJs,
   SiNodeDotJs,
   SiDocker,
+  SiGo,
+  SiPython,
 } from 'react-icons/si'
 import { GiCoffeePot } from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
@@ -32,7 +34,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
+  const professionalYears = currentYear - 2020
 
   return (
     <Stack
@@ -67,22 +69,22 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         <br /> <br />
         Here are few technologies that are cup of my{' '}
         <Tooltip
-          label="I only drink tea if I needed too!"
+          label="I only drink coffee if needed, or had a bad oncall!"
           aria-label="I hate Tea!"
           hasArrow
         >
           <Text as="span" variant="emphasis" textDecorationLine="line-through">
-            tea
+            coffee
           </Text>
         </Tooltip>{' '}
-        coffee <Icon as={GiCoffeePot} color={emphasis} />.
+        tea <Icon as={GiCoffeePot} color={emphasis} />.
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotNet} color={emphasis} fontSize="2em" />
-            C# - .NET.Core
+            <ListIcon as={SiGo} color={emphasis} fontSize="2em" />
+            Golang
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
@@ -100,8 +102,8 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Graphql
+            <ListIcon as={SiPython} color={emphasis} fontSize="2em" />
+            Python
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
             <ListIcon as={SiReact} color={emphasis} fontSize="2em" />

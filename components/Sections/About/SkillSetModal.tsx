@@ -80,6 +80,7 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
   const mobileCols = splitSkills(Skills.mobile)
   const gameCols = splitSkills(Skills.games)
   const desktopCols = splitSkills(Skills.desktop)
+  const aiMls = splitSkills(Skills['ai ml'])
   return (
     <Modal
       isOpen={isOpen}
@@ -94,11 +95,11 @@ const SkillSetModal = ({ isOpen, onClose }: ISkillSetModal) => {
         <ModalBody className={styles.skillModal}>
           <SkillList title="Backend Centric" columns={backendCols} />
           <SkillList title="Frontend Centric" columns={frontendCols} />
-          <SkillList title="CICD centric" columns={cicdCols} />
+          <SkillList title = "AI ML" columns={aiMls} />
+          <SkillList title="CI/CD centric" columns={cicdCols} />
           <SkillList title="Database and Streams" columns={dataBaseCols} />
           <SkillList title="Ui Frameworks" columns={uiFrameWorkCols} />
           <SkillList title="Mobile Development" columns={mobileCols} />
-          <SkillList title="Game Development" columns={gameCols} />
           <SkillList title="Desktop App" columns={desktopCols} />
           <SkillList title="Productivity boosts" columns={productivityCols} />
         </ModalBody>

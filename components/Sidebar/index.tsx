@@ -61,7 +61,7 @@ const Sidebar = () => {
             variant="accent"
             fontWeight="light"
           >
-            Ohh you found me?. Howdy! I am
+            Ohh you found me?. Hello! I am
           </MotionText>
           <MotionHeading
             as="h1"
@@ -70,7 +70,7 @@ const Sidebar = () => {
             textTransform="uppercase"
             variants={fadeInUp}
           >
-            Marc Jhon
+            Arpit
           </MotionHeading>
           <MotionHeading
             as="h2"
@@ -82,7 +82,7 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Lawingco.
+            Sachdeva
           </MotionHeading>
           <MotionText
             colorScheme="gray"
@@ -90,7 +90,7 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me KL. That works too . . .
+            Or you could call me Arpit. That works too . . .
           </MotionText>
 
           <MotionHeading
@@ -116,7 +116,7 @@ const Sidebar = () => {
               Thank you!
             </Text>
             <br />I am software engineer that specializes at backend apis, front
-            end integration, recently found myself studying UX too.
+            end integration, recently found myself working on AI/ML to.
           </MotionText>
           <MotionButton
             size="lg"
@@ -125,15 +125,15 @@ const Sidebar = () => {
             borderRadius="0"
             fontWeight="normal"
             fontSize="sm"
-            width="120px"
+            width="300px"
             variants={simpleOpacity}
             as={'a'}
-            href="mailto:marcjhon18@gmail.com"
+            href="mailto:arpit@chargenx.com"
             target="_blank"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Get in touch!
+            Get in touch at arpit@chargenx.com
           </MotionButton>
 
           <MotionBox d="flex" variants={simpleOpacity}>

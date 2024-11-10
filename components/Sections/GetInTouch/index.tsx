@@ -1,8 +1,9 @@
 import { memo } from 'react'
-import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react'
+import { Heading, Text, Stack, Link, Icon, Box, useColorMode } from '@chakra-ui/react'
 import { motion, Variants } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from 'react-icons/ri'
+import { ThemeMode } from 'config/theme'
 const rimuruVariant: Variants = {
   shake: {
     rotate: [0, 15, 0, -15, 0],
@@ -26,12 +27,14 @@ const rimuruVariant: Variants = {
 
 const GetInTouch = () => {
   const [ref, inView] = useInView()
+  const {colorMode} = useColorMode()
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
       height="100%"
       spacing={{ base: 6, xl: 8 }}
       as="footer"
+      marginBottom={"40px"}
     >
       <Heading
         size="2xl"
@@ -52,42 +55,10 @@ const GetInTouch = () => {
         </Text>
       </Heading>
       <Text variant="description">
-        Though, I am fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, movies or even weeb
-        stuff, anything is cool. So feel free to message me on any of my social
-        media or shoot me an{' '}
-        <Link
-          href="mailto:marcjhon18@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          email
-        </Link>
-        .
+      Although I'm fairly introverted, I do reply to messages as long as my social battery allows. Whether it's coding, work, movies, or even anime, I'm open to chatting. Feel free to reach out to me on social media or drop me an email at <a style={{color: (colorMode === ThemeMode.Dark ? "#9eecf9" : "#319795")}} href="mailto:arpit@chargenx.com">arpit@chargenx.com</a>.
       </Text>
 
-      <Box
-        spacing={0.5}
-        textAlign="center"
-        fontFamily="monospace"
-        paddingTop={{ base: 10, lg: 20, xl: 20 }}
-        paddingBottom={{ base: 5, lg: 18 }}
-      >
-        <Link
-          variant="description"
-          textDecoration="none"
-          rel="noreferrer"
-          href="https://github.com/klawingco/kl_portfolio"
-          target="_blank"
-          _focus={{ boxShadow: 'none' }}
-        >
-          <Text as="span">
-            <Icon as={RiGithubFill} h={6} w={6} /> <br />
-            Designed and Made with <Icon as={RiHeartPulseFill} /> <br />
-            KL Lawingco <Icon as={RiCopyleftLine} /> 2021
-          </Text>
-        </Link>
-      </Box>
+   
     </Stack>
   )
 }
