@@ -64,6 +64,7 @@ enhanced delivery efficiency, minimized route times, and effectively lowered sup
             src="/works/zomato.jpg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             isMobile={isMobile}
+            ctaUrl=""
           />
         </MotionGridItem>
 
