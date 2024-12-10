@@ -7,6 +7,7 @@ import {
   FaYoutube,
   FaGithub,
   FaDev,
+  FaGlobe,
 } from 'react-icons/fa'
 
 type SocialMedia = {
@@ -30,5 +31,10 @@ export const SocialMedias: SocialMedia[] = [
     label: 'Github',
     href: 'https://github.com/arpit-03',
     icon: FaGithub,
+  },
+  {
+    label: 'Company',
+    href: 'https://chargenx.com',
+    icon: FaGlobe,
   },
 ]
