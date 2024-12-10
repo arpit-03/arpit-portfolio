@@ -23,6 +23,7 @@ export const SocialMedias: SocialMedia[] = [
     icon: FaInstagram,
   },
   {
+    
     label: 'LinkedIn',
     href: 'https://www.linkedin.com/in/arpit-sachdeva-98154b136',
     icon: FaLinkedin,
